@@ -1,7 +1,7 @@
 # This workflow automatically closes issues that contain an empty body.
 # For more information, see:
 # https://github.com/kerhub/saved-replies
-name: Auto close empty issues
+name: AutoClose Empty Issues Workflow
 on:
   issues:
     types: [opened]
