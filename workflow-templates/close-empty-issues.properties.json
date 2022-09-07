@@ -1,0 +1,8 @@
+{
+  "name": "AutoClose Empty Issues Workflow",
+  "description": "Workflow to automatically close issues that don't contain any body content.",
+  "iconName": "close-empty-issues-icon",
+  "categories": [
+      "Issues"
+  ]
+}
