@@ -1,0 +1,20 @@
+# This workflow automatically closes issues that contain an empty body.
+# For more information, see:
+# https://github.com/kerhub/saved-replies
+on:
+  issues:
+    types: [opened]
+jobs:
+  closeEmptyIssues:
+    if: "${{ github.event.issue.body == '' }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: close empty issues
+        uses: kerhub/saved-replies@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          state: 'closed'
+          reply: |
+            A minimal context is required to triage your issue.
+
+            Please open a new issue using one of our issue templates.
