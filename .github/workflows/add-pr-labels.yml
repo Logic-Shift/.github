@@ -1,0 +1,35 @@
+name: "Pull Request Labeler"
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  add-pr-labels:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened'
+    steps:
+    - id: apply-pr-labels
+      name: Find and apply pull request labels
+      uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        configuration-path: .github/pr-labeler.yml
+    - id: get-linked-issues
+      name: Get linked issue numbers
+      uses: mondeja/pr-linked-issues-action@v2
+      with:
+        # Lazy linked issues. If one of the lines of the pull request body
+        # matches one of the next contents, the matching issue number will
+        # be added to `issues` output:
+        add_links_by_content: |
+          **Issue:** #{issue_number}
+          **Issue**: #{issue_number}
+          **Close:** #{issue_number}
+          **Close**: #{issue_number}
+          **Closes:** #{issue_number}
+          **Closes**: #{issue_number}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

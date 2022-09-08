@@ -1,0 +1,35 @@
+name: Potential Duplicates
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/potential-duplicates@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          label: potential-duplicate
+          exclude: |
+            adding
+            add
+            creating
+            create
+            missing
+            miss
+            needing
+            need
+            please
+            requesting
+            request
+            project
+            bug
+            feat
+          state: all
+          threshold: 0.7
+          reactions: 'eyes, confused'
+          comment: |
+            Found potential duplicates: {{#issues}}
+              -[#{{ number }}] {{ title }} ({{ accuracy }}%)
+            {{/issues}}

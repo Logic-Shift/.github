@@ -1,0 +1,6 @@
+documentation:
+  - '/docs/**.md'
+  - '/docs/**.rst'
+  - '/profile/**.md'
+  - '/profile/**.rst'
+  - '!/docs/assets/*''
