@@ -2,15 +2,15 @@
 
 Thank you for investing your time in contributing to our project! Any contribution you make will be reflected in repositories using the templates from [github.com/Logic-Shift/.github](https://github.com/github.com/Logic-Shift/.github) :sparkles:.
 
-Read our [Code of Conduct](./CODE_OF_CONDUCT) to keep our community approachable and respectable.
+Read our [Code of Conduct](/docs/CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-Use the table of contents icon <img src="https://raw.githubusercontent.com/Logic-Shift/.github/main/assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
+Use the table of contents icon <img src="https://raw.githubusercontent.com/Logic-Shift/.github/main/docs/assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
 
 ## New contributor guide
 
-To get an overview of the project, read the [README](README.md). Here are some resources to help you get started with open source contributions:
+To get an overview of the project, read the [README](/docs/README.md). Here are some resources to help you get started with open source contributions:
 
 - [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
 - [GitHub Actions](https://docs.github.com/en/actions)
@@ -54,7 +54,7 @@ Scan through our existing issues to find one that interests you. You can narrow 
 
 Commit the changes once you are happy with them. See [Atom's contributing guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) to know how to use emoji for commit messages.
 
-Once your changes are ready, don't forget to [self-review](/contributing/self-review.md) to speed up the review process:zap:.
+Once your changes are ready, don't forget to [self-review](/docs/contributing/self-review.md) to speed up the review process:zap:.
 
 ### Pull Request
 
