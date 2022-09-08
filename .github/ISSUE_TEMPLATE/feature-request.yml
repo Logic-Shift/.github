@@ -28,7 +28,7 @@ body:
     attributes:
       label: Considered alternatives
       description: A clear and concise description of any alternative solutions or features you've considered.
-      placeholder: Clearly describe the alternatives that you considered and the reasoning why they did and/or did not work.
+      placeholder: Clearly describe the alternatives that you considered and the reasoning why they did or did not work.
     validations:
       required: false
   - type: textarea
