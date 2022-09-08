@@ -1,5 +1,0 @@
-{
-  "name": "Stale Issues and PR Autoclose",
-  "description": "Warns and then closes issues and PRs that have had no activity for 60 days.",
-  "iconName": "default-icon"
-}
