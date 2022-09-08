@@ -28,11 +28,11 @@
       fill: #92344c
     }
   </style>
-  <polygon class="cls-2" points="272,272 136,272 204,136"/>
-  <polygon class="cls-1" points="66,408 202,408 272,272 136,272"/>
-  <polygon class="cls-3" points="0,272 66,136 136,272 66,408"/>
-  <polygon class="cls-4" points="204,136 136,272 66,136 136,0" />
-  <polygon class="cls-5" points="272,0 136,0 204,136" />
-  <polygon class="cls-6" points="202,408 338,408 272,272" />
-  <polygon class="cls-7" points="272,272 408,272 338,408"/>
+  <polygon id="polygon-1" class="cls-1" points="66,408 202,408 272,272 136,272"/>
+  <polygon id="polygon-2" class="cls-2" points="272,272 136,272 204,136"/>
+  <polygon id="polygon-3" class="cls-3" points="0,272 66,136 136,272 66,408"/>
+  <polygon id="polygon-4" class="cls-4" points="204,136 136,272 66,136 136,0" />
+  <polygon id="polygon-5" class="cls-5" points="272,0 136,0 204,136" />
+  <polygon id="polygon-6" class="cls-6" points="202,408 338,408 272,272" />
+  <polygon id="polygon-7" class="cls-7" points="272,272 408,272 338,408"/>
 </svg>
