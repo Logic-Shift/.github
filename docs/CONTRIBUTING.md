@@ -6,7 +6,7 @@ Read our [Code of Conduct](./CODE_OF_CONDUCT) to keep our community approachable
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-Use the table of contents icon <img src="https://raw.githubusercontent.com/Logic-Shift/.github/main/assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
+Use the table of contents icon <img src="https://raw.githubusercontent.com/Logic-Shift/.github/main/docs/assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
 
 ## New contributor guide
 
