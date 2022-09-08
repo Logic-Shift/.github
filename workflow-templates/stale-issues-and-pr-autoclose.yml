@@ -3,7 +3,7 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/actions/stale
-name: Auto close stale PR's and issues
+name: Stale Issues and PR Autoclose
 
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
         stale-issue-message: |
             This issue is being closed since it has been open for 60 days with no activity.
 
-            Please open a new issue if further assistance is still required.
+            Please open a new issue [here](${{ github.server_url }}/${{ github.repository }}/issues/new/choose) if needed. Don't forget to mention this issue.
         stale-pr-message: |
             This PR is being closed since it has been open for 60 days with no activity.
 
