@@ -3,4 +3,4 @@ documentation:
   - '/docs/**.rst'
   - '/profile/**.md'
   - '/profile/**.rst'
-  - '!/docs/assets/*''
+  - '!/docs/assets/*'
