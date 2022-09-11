@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1224" height="408" viewBox="0 0 1224 408" id="Layer_1"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1224 408" id="Layer_1"
     class="logic-shift-logo-svg">
     <title>Logic Shift Logo</title>
     <desc>Logic Shift Logo Text Stacked</desc>
     <style>
-        svg {
-            outline: 1px solid;
-        }
         polygon {
             shape-rendering: crispEdges;
             stroke-width: 1
@@ -49,6 +46,8 @@
             fill-rule: nonzero
         }
     </style>
+    <svg viewBox="0 0 408 408" width="408" height="408"
+    preserveAspectRatio="xMinYMid meet" x="0" y="0">
     <g id="logo-svg">
         <polygon id="polygon-1" class="cls-1" points="66,408 202,408 272,272 136,272"/>
         <polygon id="polygon-2" class="cls-2" points="272,272 136,272 204,136"/>
@@ -58,8 +57,11 @@
         <polygon id="polygon-6" class="cls-6" points="202,408 338,408 272,272" />
         <polygon id="polygon-7" class="cls-7" points="272,272 408,272 338,408"/>
     </g>
-    <g id="logo-txt" transform="translate(478.25,13.4) scale(1.25)">
-        <g id="svgGroup1" class="group-txt txt-logic" transform="translate(0,0)">
+    </svg>
+    <svg viewBox="0 0 596.6 306" width="745.25" height="408"
+    preserveAspectRatio="xMaxYMid meet" x="478" y="0">
+    <g id="logo-txt">
+        <g id="svgGroup1" class="group-txt txt-logic">
             <path d="M 101.6 143.002 L 0 143.002 L 0 1.002 L 32.8 1.002 L 32.8 114.202 L 101.6 114.202 L 101.6 143.002 Z"
                 id="lttr-0" />
             <path
@@ -89,4 +91,5 @@
                 id="lttr-9" />
         </g>
     </g>
+    </svg>
 </svg>
