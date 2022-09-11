@@ -2,7 +2,8 @@ name: Bug Report
 description: File a bug report
 title: "[BUG]: "
 labels: ["bug"]
-assignees: ["logic-shift-maintainers"]
+assignees:
+  - Logic-Shift-Automation
 body:
   - type: markdown
     attributes:

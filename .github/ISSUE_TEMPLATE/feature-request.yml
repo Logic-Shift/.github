@@ -2,6 +2,8 @@ name: Feature Request
 description: Got a suggestion for a feature request? Let us know!
 title: "[FEAT]: "
 labels: ["enhancement"]
+assignees:
+  - Camphul
 body:
   - type: markdown
     attributes:

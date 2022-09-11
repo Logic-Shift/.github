@@ -1,0 +1,35 @@
+name: Close stale issues
+on:
+  schedule:
+    - cron: "0 5 * * SUN"
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          stale-issue-message: |
+            👋 Hello, this issue has been automatically marked as stale because it has not had recent activity. Please note it will be closed if no further activity occurs.
+
+            Feel free to inform us of any other **issues** you discover or **feature requests** that come to mind in the future. Pull Requests (PRs) are also always welcomed!
+          stale-pr-message: |
+            Hello, this pull request has been automatically marked as stale because it has not had recent activity.
+
+            Commenting on this pull request will keep it open 👋
+
+            **It will be closed if no further activity occurs within 7 days.**
+          close-issue-message: 'This issue has been automatically closed after being stale for too long.'
+          close-pr-message: 'This pull request has been automatically closed after being stale for too long.'
+          stale-issue-label: stale
+          stale-pr-label: stale
+          days-before-stale: 60
+          days-before-close: 7
+          exempt-issue-labels: 'pending'
+          remove-stale-when-updated: true
+          operations-per-run: 30  # The maximum number of operations per run, used to control rate limiting.

@@ -1,0 +1,21 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Message that will be displayed on users' first issue"
+        pr-message: |
+            👋 Hello @${{ github.actor }}, thank you for submitting a 🚀 PR! To allow your work to be integrated as seamlessly as possible, we advise you to:
+            - ✅ Have read the [contributing guidelines](/docs/CONTRIBUTING.md).
+            - ✅ Verify your PR is **up-to-date with the @${{ github.base_ref }} branch.**
+            - ✅ Verify all Continuous Integration (CI) **checks are passing**.
+            - ✅ Keep the amount of changes and scope size to an absolute **minimum**. You can always create multiple pull requests.
